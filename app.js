@@ -19,11 +19,15 @@ mongoose.connect(key.dbConfig,{
     console.log(err)
 })
 
+app.get('/',(req,res)=>{
+    return res.send('<h1> Welcome to my website </h1>')
+})
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.use(bodyParser.json());
 
 app.use('/evenement',require('./controller/evenementController'))
+
 
 const PORT = process.env.PORT || 4000
 
