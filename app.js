@@ -25,6 +25,8 @@ app.use(bodyParser.json());
 
 app.use('/evenement',require('./controller/evenementController'))
 
-app.listen(4000,()=> {
+const PORT = process.env.PORT || 4000
+
+app.listen(PORT,()=> {
     console.log('Serveur connecte');
 });
