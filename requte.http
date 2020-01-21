@@ -1,0 +1,7 @@
+POST http://localhost:4000/evenement/new
+
+Content-Type: application/json
+{
+    "titre": "Mariage Ando Soa",
+    "mariage"
+}
