@@ -10,6 +10,9 @@ const evenementSchema = mongoose.Schema({
         type:String,
         lower:true,
         requred:true,
+    },
+    date:{
+        type: Date
     }
 })
 module.exports = mongoose.model('evenement',evenementSchema);
