@@ -1,7 +1,0 @@
-POST https://photo-app-mine.herokuapp.com/evenement/new
-Content-Type: application/json
-
-{
-    "titre":"Anniversaire Brice 2",
-    "type":"Anniversaire 2"
-}
